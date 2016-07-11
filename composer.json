@@ -1,0 +1,16 @@
+{
+  "name": "itarato/mic_php_ftp",
+  "description": "Micro PHP FTP tool",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Peter Arato",
+      "email": "it.arato@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "itarato\\MicPhpFtp\\": "src/"
+    }
+  }
+}
