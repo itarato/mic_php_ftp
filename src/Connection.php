@@ -68,6 +68,11 @@ class Connection {
   }
 
   /**
+   * @return bool
+   */
+  public function setPassiveModeOn() { return ftp_pasv($this->ftpResource, TRUE); }
+
+  /**
    * @param string $dir
    * @return string[]
    */
