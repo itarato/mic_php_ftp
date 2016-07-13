@@ -27,7 +27,7 @@ class Connection {
   /**
    * Connection constructor.
    *
-   * @param $host
+   * @param string $host
    * @param int $port
    * @param int $timeout
    */
@@ -54,8 +54,8 @@ class Connection {
   }
 
   /**
-   * @param $userName
-   * @param $password
+   * @param string $userName
+   * @param string $password
    * @return $this
    * @throws \itarato\MicPhpFtp\ConnectionException
    */
@@ -79,7 +79,7 @@ class Connection {
   public function ls($dir = './') { return ftp_nlist($this->ftpResource, $dir); }
 
   /**
-   * @param $dir
+   * @param string $dir
    * @return bool
    */
   public function cd($dir) { return ftp_chdir($this->ftpResource, $dir); }
@@ -90,9 +90,9 @@ class Connection {
   public function pwd() { return ftp_pwd($this->ftpResource); }
 
   /**
-   * @param $src
-   * @param $dest
-   * @param $mode
+   * @param string $src
+   * @param string $dest
+   * @param int $mode
    * @return bool
    */
   public function get($src, $dest, $mode = FTP_BINARY) { return ftp_get($this->ftpResource, $dest, $src, $mode); }
