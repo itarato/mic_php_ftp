@@ -5,8 +5,18 @@
 
 namespace itarato\MicPhpFtp;
 
+/**
+ * Class Connection
+ *
+ * @package itarato\MicPhpFtp
+ *
+ * FTP connection.
+ */
 class Connection {
 
+  /**
+   * @var string
+   */
   private $host;
 
   /**
